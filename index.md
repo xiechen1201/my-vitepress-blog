@@ -12,7 +12,7 @@ hero:
     actions:
         - theme: brand
           text: 开始阅读
-          link: /home
+          link: /docs/home
 
 features:
     - title: 技术博客
