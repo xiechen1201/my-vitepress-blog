@@ -1,13 +1,8 @@
-// 配置文档：
-// 1、https://vitepress.dev/zh/guide/routing
-// 2、https://vitepress.dev/reference/site-config
-
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
     // 标题
     title: '有理想',
-    base: './',
     // 描述
     description: '',
     markdown: {
@@ -22,10 +17,9 @@ export default defineConfig({
             { text: '前端', link: '/docs/front-end/20240510-01.md' }
             // { text: '后端', link: '/docs/markdown-examples' }
         ],
-
         // 侧边栏
         sidebar: {
-            '/docs/home': [
+            '/home': [
                 {
                     text: '关于我',
                     link: '/docs/home.md'
@@ -41,7 +35,7 @@ export default defineConfig({
                 }
             ],
 
-            '/docs/front-end/': [
+            '/front-end/': [
                 {
                     text: '前端基础',
                     items: [
@@ -57,7 +51,6 @@ export default defineConfig({
                 }
             ]
         },
-
         socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }]
     }
 });

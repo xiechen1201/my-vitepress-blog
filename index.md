@@ -7,12 +7,12 @@ hero:
     text: ''
     tagline: 等风来不如追风去，生活中有太多的期待，你不必准备好再出发 👨‍💻
     image:
-        src: /assets/imgs/logo.jpg
+        src: /logo.jpg
         alt: Hero image
     actions:
         - theme: brand
           text: 开始阅读
-          link: /docs/home
+          link: /home
 
 features:
     - title: 技术博客
