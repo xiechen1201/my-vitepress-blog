@@ -20,7 +20,7 @@ export default defineConfig({
         ],
         // 侧边栏
         sidebar: {
-            '/home': [
+            '/docs/home': [
                 {
                     text: '关于我',
                     link: '/docs/home.md'
@@ -36,7 +36,7 @@ export default defineConfig({
                 }
             ],
 
-            '/front-end/': [
+            '/docs/front-end/': [
                 {
                     text: '前端基础',
                     items: [
