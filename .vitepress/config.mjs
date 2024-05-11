@@ -7,11 +7,12 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
     // 标题
     title: '有理想',
+    base: './',
     // 描述
     description: '',
-    markdown:{
+    markdown: {
         // 开启代码块行数
-        lineNumbers:true
+        lineNumbers: true
     },
     themeConfig: {
         // 顶部导航蓝栏
@@ -24,20 +25,20 @@ export default defineConfig({
 
         // 侧边栏
         sidebar: {
-            '/docs/home':[
+            '/docs/home': [
                 {
                     text: '关于我',
-                    link: "/docs/home.md"
+                    link: '/docs/home.md'
                 },
                 {
                     text: '里程碑',
-                    items:[
+                    items: [
                         {
-                            text: "2024年",
-                            link: ""
+                            text: '2024年',
+                            link: ''
                         }
                     ]
-                },
+                }
             ],
 
             '/docs/front-end/': [
