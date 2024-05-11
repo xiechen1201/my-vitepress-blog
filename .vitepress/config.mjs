@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+    base:"/my-vitepress-blog/",
     // 标题
     title: '有理想',
     // 描述
