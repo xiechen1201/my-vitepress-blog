@@ -4,31 +4,100 @@ outline: deep
 
 # 关于我
 
-::: info
+代码高亮
 
-欢迎来到我的主页！
+```html
+<ul>
+  <li v-for="todo in todos" :key="todo.id">
+    {{ todo.text }}
+  </li>
+</ul>
+```
+
+行数高亮
+
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+多行高亮
+
+```js{4,6}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+注释高亮
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!' // [!code highlight]
+    }
+  }
+}
+```
+
+代码聚焦
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Focused!' // [!code focus]
+    }
+  }
+}
+```
+
+颜色差异
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code --]
+      msg: 'Added' // [!code ++]
+    }
+  }
+}
+```
+
+代码组
+
+:::code-group
+
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
+
+export default config
+```
+
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
 
 :::
-
-## 介绍
-
-::: info
-
-这是一个基于 Vue3 和 TypeScript 的个人主页。
-
-:::
-
-## 功能
-
-::: info
-
-- 支持 Markdown 语法
-- 支持代码高亮
-- 支持图片上传
-- 支持评论系统
-- 支持文章分类
-- 支持文章标签
-- 支持文章置顶
-- 支持文章发布日期
-- 支持文章浏览量统计
-- 支持文章点赞功能

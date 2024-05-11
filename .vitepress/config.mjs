@@ -9,6 +9,10 @@ export default defineConfig({
     title: '有理想',
     // 描述
     description: '',
+    markdown:{
+        // 开启代码块行数
+        lineNumbers:true
+    },
     themeConfig: {
         // 顶部导航蓝栏
         nav: [
@@ -20,6 +24,22 @@ export default defineConfig({
 
         // 侧边栏
         sidebar: {
+            '/docs/home':[
+                {
+                    text: '关于我',
+                    link: "/docs/home.md"
+                },
+                {
+                    text: '里程碑',
+                    items:[
+                        {
+                            text: "2024年",
+                            link: ""
+                        }
+                    ]
+                },
+            ],
+
             '/docs/front-end/': [
                 {
                     text: '前端基础',
